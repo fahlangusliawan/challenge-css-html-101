@@ -1,0 +1,81 @@
+/* selector */
+/* 1. css simple selector: universal, tag html, id, class */
+/* 2. css combinator : group, child, adjacent, sibling, general sibling */
+/* 3. pseudo-class selector: before, after, hover, activated */
+/* 4. pseudo-element elector: h1, div,a dll*/
+
+/* selector universal */
+*{
+  font-family: "Courier New", Courier, monospace;;
+}
+
+/* css simple selector: pake tag  pake nama tag nya*/
+h2 {
+  color: rebeccapurple;
+  background-color: violet;
+  font-family: 'Courier New', Courier, monospace;
+ }
+
+/* css simple selector: pake id (dikasi #<nama id> */
+#h3_id {
+  color: coral;
+  font-weight: 800;
+  background-color: antiquewhite; }
+
+/* css simple selector: pake class (dikasi .<nama class> */
+.oke {
+  color: blanchedalmond;
+  background-color: black; }
+
+  /* css simple selector: memilih kelas yg spesifik */
+h6.large{
+  color:orange;
+}
+
+/* css combinator : pake child (>) */
+/* hanya turunan pertamanya */
+h1 > span {
+  color:orange;
+}
+
+/* css combinator: pake descendant selector (space) */
+/* untuk seluruh keturunannya */
+div img{
+  width: 300px;
+}
+
+/* css combinatior: sibling (+) */
+/* The adjacent sibling selector is used to select an element that is directly after another specific element. */
+/* Sibling elements must have the same parent element, and "adjacent" means "immediately following". */
+div * p{
+  font-size: 1px;
+  background-color: bisque;
+  color: blueviolet;
+  padding: 120px;
+}
+
+/* css combinatior: general sibling (~) */
+/* The general sibling selector selects all elements that are next siblings of a specified element. */
+div * p{
+  font-size: 1px;
+  background-color: bisque;
+  color: blueviolet;
+  padding: 120px;
+}
+
+/* pseudo-class selector: hover */
+.navbar ul li a:hover{
+  color: yellow;
+}
+
+/* pseudo-class selector: after */
+/* menambahkan tulisan "%%%%" setelah kata di h2 */
+h2::after{
+  content: "%%%%";
+}
+
+/* pseudo-class selector: before */
+/* menambahkan tulisan "?????" sebelum kata di h2 */
+h2::before{
+  content: "????";
+}
